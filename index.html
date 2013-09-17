@@ -1,0 +1,249 @@
+<html lang="en">
+<!doctype html>
+
+	<head>
+		<meta charset="utf-8">
+
+		<title>Orion Update, Eclipse Members Meeting, Sept 2013</title>
+
+		<title>Eclipse Members Meeting - Orion Update</title>
+
+		<meta name="description" content="An Orion Project Update">
+		<meta name="author" content="Ken Walker">
+
+		<meta name="apple-mobile-web-app-capable" content="yes" />
+		<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+		<link rel="stylesheet" href="css/reveal.min.css">
+		<link rel="stylesheet" href="css/theme/default.css" id="theme">
+		<link rel="stylesheet" href="css/orion.css">
+
+		<!-- For syntax highlighting -->
+		<link rel="stylesheet" href="lib/css/zenburn.css">
+
+		<!-- If the query includes 'print-pdf', use the PDF print sheet -->
+		<script>
+			document.write( '<link rel="stylesheet" href="css/print/' + ( window.location.search.match( /print-pdf/gi ) ? 'pdf' : 'paper' ) + '.css" type="text/css" media="print">' );
+		</script>
+
+		<!--[if lt IE 9]>
+		<script src="lib/js/html5shiv.js"></script>
+		<![endif]-->
+	</head>
+
+	<body>
+
+		<div class="reveal">
+
+			<!-- Any section element inside of this container is displayed as a slide -->
+			<div class="slides">
+				<section>
+					<h3>Eclipse Members Meeting</h3>
+					<h4>Orion Project Update</h4>
+					<h4>Sept 17, 2013</h4>
+					<a class="image">
+							<img src="images/cloud-logo.png" >
+					</a>
+					<p>
+						<a href="http://kenwalker.github.io/">kenwalker.github.io</a> / <a href="http://twitter.com/kwalker">@kwalker</a> / <a href="http://twitter.com/orionhub">@orionhub</a>
+						<br>ken_walker@ca.ibm.com - Orion Project Lead
+						<h4><a href="https://orionhub.org/git/git-repository.html#,createProject.name=EclipseMeetingSept17-2013,cloneGit=https://github.com/kenwalker/EclipseMeetingSept17-2013.git">One-Click Clone and Edit this Presentation at OrionHub</a></h4>
+					</p>					
+				</section>
+
+				<section>
+				<h3>Project Activity</h3>
+				<ul>
+				<li>Almost 1 year since graduating to 1.0</li>
+				<li>Orion delivers 3 'dot' releases per-year</li>
+				<li>2.0 Feb, 3.0 June, 4.0 October</li>
+				<li>27 committers, around 17 active</li>
+				<li>~52 contributors</li>
+				<li>Very active commits (<a href="http://www.ohloh.net/p/eclipse-orion">Ohloh Statistics</a>)</li>
+				</ul>
+				</section>
+
+				<section>
+				<h3>Examples of Enhancements thru 3.0</h3>
+				<ul>
+				<li>Continual work on Editor</li>
+					<ul>
+						<li>separate stand alone builds</li>
+				  <pre class="editor" data-editor-lang="js" data-editor-theme="css/nimbus.css" style="height:40px">
+
+Yes, this is the Orion editor
+in a presentation...
+				  </pre>
+						<li>(vi/emacs bindings)</li>
+						<li>Auto-save, Auto-load, Save as Diffs</li>
+						<li>Generic template for content assist support</li>
+					</ul>
+				<li>Themes in UI and Editor</li>
+				<li>Language tooling for JavaScript</li>
+				<li>Major change is Navigation on Left added to Editor</li>
+				<li>i18N improvements, including Eclipse Babel translations</li>
+				</ul>
+				</section>
+
+				<section>
+				<h3>Examples of Enhancements thru 3.0...</h3>
+				<ul>
+				<li>Node.js implementation</li>
+					<ul>
+						<li><code>npm install orion</code></li>
+						<li><code>npm start orion</code></li>
+					</ul>
+				<li>New WAR file install for Java Server</li>
+				<li>Maven/Tycho build (still in progress)</li>
+				</ul>
+				</section>
+
+				<section>
+				<h3>Work ongoing in 4.0</h3>
+				<ul>
+				<li>Server Scalability</li>
+					<ul>
+						<li>Search indexing improvements</li>
+						<li>Meta-Data and Workspace info rewrite</li>
+					</ul>
+				<li>Index file content assist support for JavaScript libraries (targetting Node development)</li>
+				<li>Git improvements including Git Blame in the Editor</li>
+				<li>Major improvements to Orion plugin architecture to allow 2-way communications</li>
+				<li>Initial release of Projects capability...</li>
+				</ul>
+				</section>
+
+				<section>
+					<h3>Projects List</h3>
+					<a href="images/prjects.png"><img width="960" height="619" src="images/prjects.png" alt="Projects Page"></img></a>
+				</section>
+
+				<section>
+					<h3>An Individual Project</h3>
+					<a href="images/ProjectView.png"><img width="960" height="579" src="images/ProjectView.png" alt="Individual Project Page"></img></a>
+				</section>
+
+				<section>
+					<h3>Orion Challenges</h3>
+					<ul>
+					<li>Consuming 3rd party JavaScript Libraries</li>
+					<li>This is the only way that Orion can remain <b>current</b> with the rapid development cycles in the JavaScript world</li>
+					<li>If we lag, those looking to choose a platform or component will look elsewhere</li>
+					<li>Current process as we understand assumes
+						<ul>
+							<li>A 'version' of the library (<i>not often available</i>)</li>
+							<li>A compatible license (<i>getting better</i>)</li>
+							<li>a contributor agreement (<i>Not so much</i>)</li>
+						</ul>
+					</li>
+					<li>While GitHub has initiated a license <a href="http://choosealicense.com">Chooser</a>, the concept of contributor agreements is not standard</li>
+					<li>Is there a minimum template we can encourage library/tool developers to utilize which will be compatible with the Eclipse Legal Review process? Do we initiate change in the review process?</li>
+					</ul>
+				</section>
+				
+
+				<section>
+					<h3>Eclipse Members Meeting - Orion Update</h3>
+					<h4>Any further questions, please contact:</H4>
+					<h4>ken_walker@ca.ibm.com | @kwalker</h4>
+					<a class="image">
+							<img src="images/KenWalker300x300.png" >
+					</a>
+					<h4><a href="https://orionhub.org/git/git-repository.html#,createProject.name=EclipseMeetingSept17-2013,cloneGit=https://github.com/kenwalker/EclipseMeetingSept17-2013.git">One-Click Clone and Edit this Presentation at OrionHub</a></h4>
+				</section>
+
+				<section>
+				<h1>Backup</h1>
+				</section>
+
+				<section>
+					<h2>Find out more</h2>
+					<p>Read our blog at <a href="http://planetorion.org">Planet Orion</a></p>
+					<p>Check out the <a href="http://wiki.eclipse.org/Orion/Buzz">Orion BUZZ</a></p>
+					<p>Lots of information in the <a href="http://wiki.eclipse.org/Orion">Orion Wiki</a></p>
+					<p>Subscribe and contribute to the <a href="https://dev.eclipse.org/mailman/listinfo/orion-dev">Orion Dev List</a>
+					<p>Create an account and try it at <a href="https://orionhub.org">OrionHub</a></p>
+					<p> </p>
+				</section>
+
+				<section>
+					<h3>Available components and shims from Orion</h3>
+					<p>Promises/A+ cancellation and progress, W3C URL, W3C Web Components, HTML Templates and Custom Elements, JavaScript APIs for OSGi</p>
+					<p>
+					<a href="https://github.com/eclipse/orion.client/blob/master/bundles/org.eclipse.orion.client.core/web/orion/Deferred.js">Orion Deferred</a>, 
+					<a href="https://github.com/eclipse/orion.client/blob/master/bundles/org.eclipse.orion.client.core/web/orion/HTMLTemplates-shim.js">Orion HTML Templates Shim</a>, 
+					<a href="https://github.com/eclipse/orion.client/blob/master/bundles/org.eclipse.orion.client.core/web/orion/URITemplate.js">Orion URI Templates</a>, 
+					<a href="https://github.com/eclipse/orion.client/blob/master/bundles/org.eclipse.orion.client.core/web/orion/URL-shim.js">Orion URL Shim</a>, 
+					<a href="https://github.com/eclipse/orion.client/blob/master/bundles/org.eclipse.orion.client.core/web/orion/pluginregistry.js">Orion Plugin Registry</a>, 
+					<a href="https://github.com/eclipse/orion.client/blob/master/bundles/org.eclipse.orion.client.core/web/orion/serviceregistry.js">Orion Service Registry</a>, 
+					<a href="https://github.com/eclipse/orion.client/blob/master/bundles/org.eclipse.orion.client.core/web/orion/xhr.js">Orion XHR Implementation</a>, 
+					<a href="https://github.com/mamacdon/deferred-fs">Orion Node Deferred File System</a>
+					<a href="http://download.eclipse.org/orion/">Stand-alone Editor (follow stable links)</a>
+					</p>
+					<p>All under the EPL and EDL</p>
+				</section>
+
+		</div>
+		<div class="topBanner">
+			<img src="images/orionsmall.png" height="50" width="50" style="float:left">
+			<img src="images/codeeverywhere.png" style="float:right">
+		</div>
+
+		<script src="lib/js/head.min.js"></script>
+		<script src="js/reveal.min.js"></script>
+
+		<script>
+
+			// Full list of configuration options available here:
+			// https://github.com/hakimel/reveal.js#configuration
+			
+			// Put the following config option to advance slides every 15 seconds
+//				autoSlide: 15000,
+			Reveal.initialize({
+				width: 1200,
+				controls: true,
+				progress: true,
+				history: true,
+				center: true,
+				progress: true,
+
+				theme: 'orion', // available themes are in /css/theme
+				transition: Reveal.getQueryHash().transition || 'fade', // default/cube/page/concave/zoom/linear/fade/none
+
+				// Optional libraries used to extend on reveal.js
+				dependencies: [
+					{ src: 'lib/js/classList.js', condition: function() { return !document.body.classList; } },
+					{ src: 'plugin/markdown/showdown.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+					{ src: 'plugin/markdown/markdown.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+					{ src: 'plugin/highlight/highlight.js', async: true, callback: function() { hljs.initHighlightingOnLoad(); } },
+					{ src: 'plugin/zoom-js/zoom.js', async: true, condition: function() { return !!document.body.classList; } },
+					{ src: 'plugin/notes/notes.js', async: true, condition: function() { return !!document.body.classList; } },
+					
+					{ src: 'js/built-editor-fix.js', async: true, callback: function()
+							{
+							    require(["orion/editor/edit"], function(edit) {
+							        var editors = edit({
+							            className: "editor"
+							        });
+							        function updateEditor() {							
+							            for (var i = 0; i < editors.length; i++) {
+							                editors[i].getTextView().update(true);
+							            }
+							        }
+							        document.addEventListener("transitionend", updateEditor);
+							        document.addEventListener("webkitTransitionEnd", updateEditor);
+							    });
+							}
+					}					
+					
+					// { src: 'plugin/search/search.js', async: true, condition: function() { return !!document.body.classList; } }
+					// { src: 'plugin/remotes/remotes.js', async: true, condition: function() { return !!document.body.classList; } }
+				]
+			});
+
+		</script>
+
+	</body>
+</html>
